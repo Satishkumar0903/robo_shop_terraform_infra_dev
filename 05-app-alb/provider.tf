@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "devops-practice-state"
-    key    = "robo-shop-inra-app-alb"
+    key    = "robo-shop-infra-app-alb"
     region = "us-east-1"
     dynamodb_table = "devops-practice-lock"
   }
