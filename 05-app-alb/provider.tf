@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "devops-practice-state"
+    bucket = "devops-practice-state-dev"
     key    = "robo-shop-inra-app-alb"
     region = "us-east-1"
-    dynamodb_table = "devops-practice-lock"
+    dynamodb_table = "devops-practice-locking-dev"
   }
 }
 
